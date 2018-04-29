@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'metta-iconfont';
+    src:  url('../fonts/metta-iconfont.eot');
+    src:  url('../fonts/metta-iconfont.eot') format('embedded-opentype'),
+        url('../fonts/metta-iconfont.ttf') format('truetype'),
+        url('../fonts/metta-iconfont.woff') format('woff'),
+        url('../fonts/metta-iconfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    font-family: 'metta-iconfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: baseline;
+    font-size: 0.8em;
+    margin-right: 0.1em;
+}
+
+body {
+    margin: 0;
+}
+main {
+    padding: 2em;
+}
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.aside {
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 10px
+}
+.money {
+    font-weight: 900;
+    font-style: normal;
+}
+
+.event-details {
+    text-align: left;
+    font-size: 1.2em;
+    list-style-type: none;
+    margin: 0 0 2em 0;
+    padding: 0;
+}
+
+
+
+.event-details li:before{
+    content: "T";
+    font-family: 'metta-iconfont' !important;
+    margin-right: 0.3em;
+    vertical-align: middle;
+}
+.event-details li#event-location:before{
+    content: "L";
+}
+
+h1 {
+    font-weight: 900;
+    color: #ffff00;
+    font-size: 4em;
+    text-align: center;
+}
+main {
+    text-align: center;
+}
+a.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: black;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+th, td {
+  text-align: left;
+  padding: 4px;
+}
+
+.cf:before, .cf:after {
+    content: " "; display: table;    
+}
+
+.cf:after { 
+    clear: both; 
+}
