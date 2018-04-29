@@ -27,7 +27,8 @@ contract MetaCoin {
      */
     constructor() public {
         totalSupply = 2000 * 10 ** uint256(decimals);  // Update total supply with the decimal amount
-        balanceOf[0xc92627D13aCc114B69d5D4CeD0CE50598B8db52E] = totalSupply;                // Give the creator all initial tokens
+        // balanceOf[0xc92627D13aCc114B69d5D4CeD0CE50598B8db52E] = totalSupply;                // Give the creator all initial tokens
+        balanceOf[msg.sender] = totalSupply;
         name = 'Metta Coin';                                   // Set the name for display purposes
         symbol = 'MTTA';                               // Set the symbol for display purposes
     }
@@ -147,4 +148,3 @@ contract MetaCoin {
         return true;
     }
 }
-
